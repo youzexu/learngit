@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background-color: white;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .zongti {
+            background-color: white;
+            padding: 40px 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .tu1 {
+            background-color: #899fe1;
+        }
+
+        .tu1 img {
+            width: 100%;
+        }
+
+        .tu2 {
+            width: 100px;
+            height: 100px;
+            display: block;
+            border-radius: 50%;
+            margin: -50px auto 30px;
+            border: 5px solid #fff;
+            overflow: hidden;
+        }
+
+        .tu2 img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .zhanghao {
+            background-color: #f7f3b6;
+            margin: 5px;
+            font-size: 14px;
+            padding: 10px;
+            font-weight: 500px;
+            border-radius: 5%;
+        }
+
+        .yonghu,
+        .mima {
+            display: block;
+            margin-bottom: 0px;
+            color: #020202;
+            font-weight: 500px;
+            margin-bottom: 20px;
+        }
+
+        .yonhu label,
+        .mima label {
+            display: block;
+            margin-bottom: 0px;
+            color: #555;
+            font-weight: 500;
+        }
+
+        .yonghu input[type="text"],
+        .mima input[type="password"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+
+        }
+
+        .fuxuan {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .fuxuan label {
+            margin-bottom: 0;
+            cursor: pointer;
+            color: #555;
+        }
+
+        .fuxuaninput[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+            cursor: pointer;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 14px;
+            background: #667eea;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .login-btn:hover {
+            background: #5a67d8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="zongti">
+        <div class="tu1"><img src="login-head.png" alt=""></div>
+        <div class="tu2"><img src="avatar.png" alt=""></div>
+        <p class="zhanghao">账号：admin 密码：12345</p>
+        <form action="#" method="post">
+            <div class="yonghu">
+                <label for="username"></label>
+                <input type="text" id="username" name="username" placeholder="用户名">
+            </div>
+            <div class="mima">
+                <label for="password"></label>
+                <input type="password" id="password" name="password" placeholder="密码">
+            </div>
+            <div class="fuxuan">
+                <input type="checkbox" name="remenber" id="remenber">
+                <label for="remenber">保持会话</label>
+            </div>
+            <button type="submit" class="login-btn">登录</button>
+        </form>
+    </div>
+    <div>
+    </div>
+
+</body>
+
+</html>
